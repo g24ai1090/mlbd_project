@@ -1,0 +1,55 @@
+{
+  "dataset_profiles": [
+    {
+      "name": "1gb",
+      "target_size_gb": 1,
+      "months": ["2024-01"],
+      "recommended_shuffle_partitions": 64
+    },
+    {
+      "name": "5gb",
+      "target_size_gb": 5,
+      "months": ["2024-01", "2024-02", "2024-03"],
+      "recommended_shuffle_partitions": 128
+    },
+    {
+      "name": "10gb",
+      "target_size_gb": 10,
+      "months": ["2024-01", "2024-02", "2024-03", "2024-04", "2024-05"],
+      "recommended_shuffle_partitions": 192
+    },
+    {
+      "name": "25gb",
+      "target_size_gb": 25,
+      "months": ["2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-07", "2024-08"],
+      "recommended_shuffle_partitions": 320
+    },
+    {
+      "name": "50gb",
+      "target_size_gb": 50,
+      "months": ["2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12"],
+      "recommended_shuffle_partitions": 512
+    }
+  ],
+  "cluster_profiles": [
+    {
+      "name": "2-node",
+      "workers": 2,
+      "master_machine_type": "n2-standard-4",
+      "worker_machine_type": "n2-standard-4"
+    },
+    {
+      "name": "4-node",
+      "workers": 4,
+      "master_machine_type": "n2-standard-4",
+      "worker_machine_type": "n2-standard-4"
+    },
+    {
+      "name": "6-node",
+      "workers": 6,
+      "master_machine_type": "n2-standard-8",
+      "worker_machine_type": "n2-standard-8"
+    }
+  ],
+  "benchmark_variants": ["native", "external", "adaptive"]
+}
