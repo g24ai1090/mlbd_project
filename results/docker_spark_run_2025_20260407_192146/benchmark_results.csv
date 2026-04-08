@@ -1,0 +1,4 @@
+variant,rows,input_bytes,shuffle_partitions,execution_seconds,throughput_gb_per_min,estimated_top_key_ratio,partition_imbalance_ratio,merge_passes,output_path,disk_bytes_spilled,memory_bytes_spilled,shuffle_write_bytes,shuffle_read_bytes,spill_events
+native,48722602,829973299,8,419.6856,0.1105,0.0437,0.0437,0,/workspace/results/docker_spark_run_2025_20260407_192146/native,1101783414,2415914496,2184007994,1468464625,8
+external,48722602,829973299,8,383.8833,0.1208,0.0437,0.0437,0,/workspace/results/docker_spark_run_2025_20260407_192146/external,2332761567,4932492096,4400831775,2908338767,15
+adaptive,48722602,829973299,8,428.0702,0.1083,0.0437,0.0218,0,/workspace/results/docker_spark_run_2025_20260407_192146/adaptive,3692721715,8103379872,8632918740,4391698801,23

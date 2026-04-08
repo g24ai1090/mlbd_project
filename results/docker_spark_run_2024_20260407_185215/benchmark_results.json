@@ -1,0 +1,441 @@
+{
+  "dataset_path": "/workspace/data/real/yellow_tripdata_2024-*.parquet",
+  "row_count": 41169720,
+  "benchmark_results": [
+    {
+      "variant": "native",
+      "rows": 41169720,
+      "input_bytes": 693001713,
+      "shuffle_partitions": 8,
+      "execution_seconds": 247.3551,
+      "throughput_gb_per_min": 0.1566,
+      "estimated_top_key_ratio": 0.0486,
+      "partition_imbalance_ratio": 0.0486,
+      "merge_passes": 0,
+      "output_path": "/workspace/results/docker_spark_run_2024_20260407_185215/native",
+      "disk_bytes_spilled": 1090692975,
+      "memory_bytes_spilled": 2415914496,
+      "shuffle_write_bytes": 1831239712,
+      "shuffle_read_bytes": 1238388447,
+      "spill_events": 8
+    },
+    {
+      "variant": "external",
+      "rows": 41169720,
+      "input_bytes": 693001713,
+      "shuffle_partitions": 8,
+      "execution_seconds": 300.9939,
+      "throughput_gb_per_min": 0.1287,
+      "estimated_top_key_ratio": 0.0486,
+      "partition_imbalance_ratio": 0.0486,
+      "merge_passes": 0,
+      "output_path": "/workspace/results/docker_spark_run_2024_20260407_185215/external",
+      "disk_bytes_spilled": 2131449616,
+      "memory_bytes_spilled": 4546616864,
+      "shuffle_write_bytes": 4621122557,
+      "shuffle_read_bytes": 2450472055,
+      "spill_events": 15
+    },
+    {
+      "variant": "adaptive",
+      "rows": 41169720,
+      "input_bytes": 693001713,
+      "shuffle_partitions": 8,
+      "execution_seconds": 551.7383,
+      "throughput_gb_per_min": 0.0702,
+      "estimated_top_key_ratio": 0.0486,
+      "partition_imbalance_ratio": 0.0243,
+      "merge_passes": 0,
+      "output_path": "/workspace/results/docker_spark_run_2024_20260407_185215/adaptive",
+      "disk_bytes_spilled": 3170480963,
+      "memory_bytes_spilled": 6979308544,
+      "shuffle_write_bytes": 8235305562,
+      "shuffle_read_bytes": 3699619416,
+      "spill_events": 23
+    }
+  ],
+  "analytics": {
+    "hourly_revenue": [
+      {
+        "pickup_hour": "2002-12-31 16",
+        "trips": 1,
+        "total_revenue": 37.3,
+        "avg_trip_distance": 7.77
+      },
+      {
+        "pickup_hour": "2002-12-31 22",
+        "trips": 6,
+        "total_revenue": 58.2,
+        "avg_trip_distance": 1.91
+      },
+      {
+        "pickup_hour": "2002-12-31 23",
+        "trips": 4,
+        "total_revenue": 133.8,
+        "avg_trip_distance": 7.69
+      },
+      {
+        "pickup_hour": "2008-12-31 00",
+        "trips": 1,
+        "total_revenue": 49.9,
+        "avg_trip_distance": 5.19
+      },
+      {
+        "pickup_hour": "2008-12-31 22",
+        "trips": 1,
+        "total_revenue": 11.4,
+        "avg_trip_distance": 1.62
+      },
+      {
+        "pickup_hour": "2008-12-31 23",
+        "trips": 8,
+        "total_revenue": 476.3,
+        "avg_trip_distance": 14.29
+      },
+      {
+        "pickup_hour": "2009-01-01 00",
+        "trips": 12,
+        "total_revenue": 375.1,
+        "avg_trip_distance": 7.78
+      },
+      {
+        "pickup_hour": "2009-01-01 02",
+        "trips": 1,
+        "total_revenue": 16.3,
+        "avg_trip_distance": 2.98
+      },
+      {
+        "pickup_hour": "2009-01-01 05",
+        "trips": 1,
+        "total_revenue": 43.6,
+        "avg_trip_distance": 9.65
+      },
+      {
+        "pickup_hour": "2009-01-01 14",
+        "trips": 1,
+        "total_revenue": 22.6,
+        "avg_trip_distance": 2.05
+      },
+      {
+        "pickup_hour": "2009-01-01 22",
+        "trips": 1,
+        "total_revenue": 40.8,
+        "avg_trip_distance": 8.5
+      },
+      {
+        "pickup_hour": "2009-01-01 23",
+        "trips": 2,
+        "total_revenue": 49.4,
+        "avg_trip_distance": 5.73
+      },
+      {
+        "pickup_hour": "2023-12-31 23",
+        "trips": 10,
+        "total_revenue": 144.1,
+        "avg_trip_distance": 2.6
+      },
+      {
+        "pickup_hour": "2024-01-01 00",
+        "trips": 6596,
+        "total_revenue": 125174.45,
+        "avg_trip_distance": 2.94
+      },
+      {
+        "pickup_hour": "2024-01-01 01",
+        "trips": 7355,
+        "total_revenue": 150484.74,
+        "avg_trip_distance": 2.83
+      },
+      {
+        "pickup_hour": "2024-01-01 02",
+        "trips": 6220,
+        "total_revenue": 122564.58,
+        "avg_trip_distance": 2.75
+      },
+      {
+        "pickup_hour": "2024-01-01 03",
+        "trips": 4936,
+        "total_revenue": 98870.3,
+        "avg_trip_distance": 2.89
+      },
+      {
+        "pickup_hour": "2024-01-01 04",
+        "trips": 3188,
+        "total_revenue": 65215.89,
+        "avg_trip_distance": 3.38
+      },
+      {
+        "pickup_hour": "2024-01-01 05",
+        "trips": 1522,
+        "total_revenue": 32921.36,
+        "avg_trip_distance": 4.15
+      },
+      {
+        "pickup_hour": "2024-01-01 06",
+        "trips": 1532,
+        "total_revenue": 40309.99,
+        "avg_trip_distance": 5.32
+      },
+      {
+        "pickup_hour": "2024-01-01 07",
+        "trips": 1378,
+        "total_revenue": 37475.35,
+        "avg_trip_distance": 5.95
+      },
+      {
+        "pickup_hour": "2024-01-01 08",
+        "trips": 1204,
+        "total_revenue": 32791.15,
+        "avg_trip_distance": 5.92
+      },
+      {
+        "pickup_hour": "2024-01-01 09",
+        "trips": 1430,
+        "total_revenue": 35620.49,
+        "avg_trip_distance": 5.39
+      },
+      {
+        "pickup_hour": "2024-01-01 10",
+        "trips": 2263,
+        "total_revenue": 51172.35,
+        "avg_trip_distance": 4.89
+      },
+      {
+        "pickup_hour": "2024-01-01 11",
+        "trips": 2974,
+        "total_revenue": 59555.9,
+        "avg_trip_distance": 3.99
+      },
+      {
+        "pickup_hour": "2024-01-01 12",
+        "trips": 3753,
+        "total_revenue": 71009.24,
+        "avg_trip_distance": 3.66
+      },
+      {
+        "pickup_hour": "2024-01-01 13",
+        "trips": 3743,
+        "total_revenue": 79107.11,
+        "avg_trip_distance": 4.35
+      },
+      {
+        "pickup_hour": "2024-01-01 14",
+        "trips": 4310,
+        "total_revenue": 94643.83,
+        "avg_trip_distance": 4.2
+      },
+      {
+        "pickup_hour": "2024-01-01 15",
+        "trips": 4650,
+        "total_revenue": 104253.49,
+        "avg_trip_distance": 10.45
+      },
+      {
+        "pickup_hour": "2024-01-01 16",
+        "trips": 4261,
+        "total_revenue": 99518.63,
+        "avg_trip_distance": 4.63
+      },
+      {
+        "pickup_hour": "2024-01-01 17",
+        "trips": 3813,
+        "total_revenue": 83601.44,
+        "avg_trip_distance": 4.24
+      },
+      {
+        "pickup_hour": "2024-01-01 18",
+        "trips": 3702,
+        "total_revenue": 81502.47,
+        "avg_trip_distance": 4.34
+      },
+      {
+        "pickup_hour": "2024-01-01 19",
+        "trips": 3253,
+        "total_revenue": 75265.14,
+        "avg_trip_distance": 4.75
+      },
+      {
+        "pickup_hour": "2024-01-01 20",
+        "trips": 2805,
+        "total_revenue": 63285.06,
+        "avg_trip_distance": 4.78
+      },
+      {
+        "pickup_hour": "2024-01-01 21",
+        "trips": 2462,
+        "total_revenue": 56666.09,
+        "avg_trip_distance": 4.95
+      },
+      {
+        "pickup_hour": "2024-01-01 22",
+        "trips": 2187,
+        "total_revenue": 59495.45,
+        "avg_trip_distance": 6.15
+      },
+      {
+        "pickup_hour": "2024-01-01 23",
+        "trips": 1476,
+        "total_revenue": 44608.45,
+        "avg_trip_distance": 6.94
+      },
+      {
+        "pickup_hour": "2024-01-02 00",
+        "trips": 967,
+        "total_revenue": 25428.47,
+        "avg_trip_distance": 5.85
+      },
+      {
+        "pickup_hour": "2024-01-02 01",
+        "trips": 428,
+        "total_revenue": 11104.44,
+        "avg_trip_distance": 5.96
+      },
+      {
+        "pickup_hour": "2024-01-02 02",
+        "trips": 244,
+        "total_revenue": 6711.88,
+        "avg_trip_distance": 6.57
+      },
+      {
+        "pickup_hour": "2024-01-02 03",
+        "trips": 234,
+        "total_revenue": 8001.78,
+        "avg_trip_distance": 7.76
+      },
+      {
+        "pickup_hour": "2024-01-02 04",
+        "trips": 285,
+        "total_revenue": 9447.58,
+        "avg_trip_distance": 7.3
+      },
+      {
+        "pickup_hour": "2024-01-02 05",
+        "trips": 643,
+        "total_revenue": 20889.14,
+        "avg_trip_distance": 7.72
+      },
+      {
+        "pickup_hour": "2024-01-02 06",
+        "trips": 1454,
+        "total_revenue": 36107.64,
+        "avg_trip_distance": 5.41
+      },
+      {
+        "pickup_hour": "2024-01-02 07",
+        "trips": 2891,
+        "total_revenue": 66412.24,
+        "avg_trip_distance": 4.63
+      },
+      {
+        "pickup_hour": "2024-01-02 08",
+        "trips": 3541,
+        "total_revenue": 70832.27,
+        "avg_trip_distance": 4.39
+      },
+      {
+        "pickup_hour": "2024-01-02 09",
+        "trips": 3932,
+        "total_revenue": 76685.18,
+        "avg_trip_distance": 3.67
+      },
+      {
+        "pickup_hour": "2024-01-02 10",
+        "trips": 4178,
+        "total_revenue": 81411.11,
+        "avg_trip_distance": 3.65
+      }
+    ],
+    "top_pickup_zones": [
+      {
+        "zone_id": 132,
+        "trips": 1989994
+      },
+      {
+        "zone_id": 237,
+        "trips": 1915441
+      },
+      {
+        "zone_id": 161,
+        "trips": 1914607
+      },
+      {
+        "zone_id": 236,
+        "trips": 1729896
+      },
+      {
+        "zone_id": 162,
+        "trips": 1418847
+      },
+      {
+        "zone_id": 230,
+        "trips": 1391159
+      },
+      {
+        "zone_id": 186,
+        "trips": 1362156
+      },
+      {
+        "zone_id": 142,
+        "trips": 1314690
+      },
+      {
+        "zone_id": 138,
+        "trips": 1295508
+      },
+      {
+        "zone_id": 170,
+        "trips": 1176583
+      }
+    ],
+    "top_dropoff_zones": [
+      {
+        "zone_id": 236,
+        "trips": 1793164
+      },
+      {
+        "zone_id": 237,
+        "trips": 1723802
+      },
+      {
+        "zone_id": 161,
+        "trips": 1539905
+      },
+      {
+        "zone_id": 230,
+        "trips": 1310990
+      },
+      {
+        "zone_id": 170,
+        "trips": 1212888
+      },
+      {
+        "zone_id": 162,
+        "trips": 1183375
+      },
+      {
+        "zone_id": 142,
+        "trips": 1141648
+      },
+      {
+        "zone_id": 239,
+        "trips": 1131544
+      },
+      {
+        "zone_id": 68,
+        "trips": 1075723
+      },
+      {
+        "zone_id": 141,
+        "trips": 1061309
+      }
+    ]
+  },
+  "comparison_summary": {
+    "adaptive_vs_native_runtime_pct": -123.06,
+    "adaptive_vs_external_runtime_pct": -83.31,
+    "adaptive_partition_imbalance_delta": 0.0243,
+    "adaptive_vs_external_spill_reduction_pct": -53.33,
+    "adaptive_vs_external_imbalance_reduction_pct": 50.0,
+    "demo_note": "For the Spark benchmark, compare runtime together with spill, shuffle, and partition imbalance. Large-scale Dataproc runs provide the strongest evidence for adaptive gains."
+  }
+}
